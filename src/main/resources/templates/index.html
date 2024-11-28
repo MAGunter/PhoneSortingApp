@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="">
+<head>
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to the Number Sorting App</h1>
+<p>Select a sorting algorithm to view the results:</p>
+
+<a th:href="@{/api/sorting/radix}" class="button">Radix Sort</a>
+<a th:href="@{/api/sorting/quick}" class="button">Quick Sort</a>
+</body>
+</html>
