@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Test Page</title>
+</head>
+<body>
+<h1>Sorted</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>PhoneNumber</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="person : ${persons}">
+        <td th:text="${person.id}"></td>
+        <td th:text="${person.firstName}"></td>
+        <td th:text="${person.lastName}"></td>
+        <td th:text="${person.number}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+
